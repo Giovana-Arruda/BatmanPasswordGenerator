@@ -4,6 +4,7 @@ import { View } from "react-native";
 import { styles } from "./Styles";
 import { BatTextInput } from "../components/BatTextInput/BatTextInput";
 import { StatusBar } from "expo-status-bar";
+import { BatButton } from "../components/BatButton/BatButton";
 
 export default function Home(){
     return (
@@ -14,6 +15,7 @@ export default function Home(){
          </View>
          <View style={styles.inputContainer}> 
             <BatTextInput />
+            <BatButton />
          </View>
          
          
