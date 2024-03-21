@@ -11,11 +11,11 @@ export const styles = StyleSheet.create({
     height: 40,
     justifyContent: 'center',
     paddingVertical: 12,
-    paddingHorizontal: 50,
+    paddingHorizontal: 40,
     backgroundColor: 'black',
     borderRadius: 3,
     elevation: 3,
-    marginTop: 4,
+    marginTop: 5,
 
 
   },

@@ -3,9 +3,9 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
 inputer: {
     backgroundColor: '#E5BF3C',
-    width: 180,
+    width: 250,
     color: 'black',
-    fontSize: 20,
+    fontSize: 16,
     height: 40,
     borderWidth: 1,
     borderRadius: 5,
