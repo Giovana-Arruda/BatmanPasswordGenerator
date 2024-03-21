@@ -6,7 +6,7 @@ inputer: {
     width: 250,
     color: 'black',
     fontSize: 16,
-    height: 40,
+    height: 50,
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,

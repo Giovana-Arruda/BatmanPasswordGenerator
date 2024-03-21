@@ -1,15 +1,21 @@
 import React, {useState} from 'react';
-import { View, Button, Text, Pressable} from 'react-native';
-
+import {Text, Pressable} from 'react-native';
 import { styles } from './BatButton.style';
 import { BatTextInput } from '../BatTextInput/BatTextInput';
+import generatePass from '../../services/passwordService';
+import * as Clipboard from 'expo-clipboard';
 
 
 export function BatButton() {
   const [password, setPassword] = useState('')
 
   function handleGenerateButton(){
-    setPassword("teste")
+    let generateToken = generatePass();
+    setPassword(generateToken);
+  }
+
+  function handleCopyButton(){
+    Clipboard.setStringAsync(password);
   }
 
   return (
@@ -21,7 +27,7 @@ export function BatButton() {
     <Text style={styles.text}>GENERATE</Text></Pressable>
 
     <Pressable 
-        onPress={()=> (console.log("Fui pressionado!"))}
+        onPress={handleCopyButton}
         style={styles.button}>
     <Text style={styles.text}>⚡COPY</Text></Pressable>
     </>

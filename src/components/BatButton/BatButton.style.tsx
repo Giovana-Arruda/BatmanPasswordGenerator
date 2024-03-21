@@ -7,8 +7,8 @@ export const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    width: '100%',
-    height: 40,
+    width: 250,
+    height: 50,
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 40,
